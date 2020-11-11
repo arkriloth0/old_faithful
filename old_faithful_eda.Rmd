@@ -3,9 +3,9 @@ title: "Old Faithful exploratory analysis"
 author: "Allan Lui"
 date: "11/11/2020"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -49,11 +49,11 @@ hist(df$waiting)
 
 A scatter plot of the data is shown below:
 
-```{r marginal distributions}
+```{r scatter}
 plot(df$eruptions,df$waiting)
 
 ```
 
-#Conclusions
+# Conclusions
 
 Both the duration of eruptions and waiting time show a bimodal distribution and a positive relationship between eruption durations and waiting times.
