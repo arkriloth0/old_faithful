@@ -62,7 +62,6 @@ mod2 <- mixmodCluster(faithful, nbCluster=2, criterion="ICL")
 ```
 
 A summary of both models is shown below. 
-**TODO**: add summary of the 2-component GMM. 
 ```{r GMM summary}
 summary(mod1)
 summary(mod2)
@@ -72,11 +71,9 @@ summary(mod2)
 The model with 2 components has an ICL value of `r mod2@bestResult@criterionValue`. 
 The model with 1 component has an ICL value of `r mod1@bestResult@criterionValue`. 
 
-The best performing model has ... components. 
+The best performing model has 2 components. 
 
 A plot of the optimal clustering is shown below. 
-
-**TODO**: plot the best performing model. 
 
 ```{r}
 plot(mod2)
@@ -84,6 +81,6 @@ plot(mod2)
 
 # Conclusion
 
-**TODO**: Write a brief conclusion. 
+Based on Gaussian mixture model analysis of the old faithful dataset, there are two clusters of eruptions. The first cluster is of short waiting time and eruption duration, while the second cluster has long waiting time and eruption duration.
 
 
